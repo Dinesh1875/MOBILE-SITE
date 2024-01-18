@@ -1,0 +1,119 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main-container{
+    height: 140vh;  
+    
+}
+.signup-container-1{
+     position: relative;
+     top: 50px;
+     right: 25%;
+     width: 34%;
+     float: left;
+}
+
+.sign-up-logo{
+    position: relative;
+    left: 20%; 
+    height: 135vh;
+    width: 60%; 
+    background-color: lightslategray; 
+    filter: drop-shadow(5px 5px 5px black); 
+     
+}
+
+#sign{
+    float: left;
+    margin-left: 80px;
+    margin-top: 45px;
+    font-size: 40px;
+    color: gold;
+}
+img{
+    position: relative;
+    left: 25%;
+    height: 120px;
+    float: left;
+}
+#site{
+    position: relative;
+    top: 35px;
+    left: 25%;
+    color: white;
+}
+#site::before{
+    content: "F";
+    font-size: 45px;
+    font-style: italic;
+    color: gold;
+    letter-spacing: 2px;
+}
+label{
+    line-height: 35px;
+    font-size: 20px;
+}
+label::after{
+    content: "*";
+    color: red;
+}
+input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    height: 25px;
+    width: 270px;
+}
+.signup-container-2{
+    
+    position: relative;
+    top: 50px;
+    left: 90px;
+    height: 20vh;
+    width: 35%; 
+    float: left;
+   
+    
+}
+.signup-container-3{
+    
+    position: relative;
+    top: 45px;
+    right: 13%;
+    height: 60vh;
+    width: 30%;
+    float: right;
+  
+   
+}
+#save{
+    position: relative;
+    top: 35% ;
+    right: 225px;
+    height: 40px;
+    width: 280px;
+    float: left;
+    color: gold;
+    background-color: lightslategray;
+}
+#submit{
+    position: relative;
+    top: 34.5%;
+    right: 13%;
+    height: 40px;
+    width: 275px;
+    float: right;
+    background-color: gold;
+}
+#save:hover{
+    border: 2px solid gold;
+}
+#submit:hover{
+    border: 2px solid lightslategray;
+}
+
+ 
+
+
+

@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: #ffffff; 
+}
+.contact-us-container{
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    transform: translate(-50%,-50%);
+    height: 550px;
+    /* width: 600px; */
+    width: 950px;
+    background-color: white;
+    filter: drop-shadow(0px 0px 55px lightslategray);
+    backdrop-filter: blur(250px);
+}
+.right-grey{
+    position: absolute;
+    top: 10.5%;
+    /* left: 60%; */
+    left: 57%;
+    height: 550px;
+    width: 350px;
+    background-color: lightslategray;
+    
+}
+#conatct-head{
+    float: left;
+    position: relative;
+    top: 35px;
+    left: 70px;
+    font-size: 45px;
+    color: lightslategray;
+    text-shadow: 1px 1px 1px;
+}
+#content{
+    position: relative;
+    top: 95px;
+    right: 205px;
+    line-height: 30px;
+    color: lightslategray;
+}
+.input{
+    position: relative;
+    top: 100px;
+    left: 70px; 
+    font-size: 25px;
+    filter: drop-shadow(0px 1px 2px lightslategray);
+}
+.input input{
+    padding-left: 5px;
+    border: 1px solid white;
+}
+input{
+    margin-top: 30px;
+    height: 30px;
+    width: 320px;
+    
+}
+#send{
+    position: relative;
+    top: 40px;
+    height: 35px;
+    width: 320px;
+    background-color: lightslategray;
+    border: none;
+    color: white;
+    filter: drop-shadow(2px 2px 2px lightslategray);
+    font-weight: 800;
+}
+#send:hover{
+    background-color: gold;
+    color: black;
+    transform: scale(1.1) ;
+}
+#support{
+    position: relative;
+    top: 175px;
+    left: 75px;
+    color: lightslategray;
+    font-size: 26px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 0px 1px 1px;
+}
+
+
+#Flash-logo{
+    float: left;
+    height: 100px;
+    width: 60px;
+    position: relative;
+    left: 10px;
+}
+#site{
+    position: relative;
+    top: 15px;
+    color: white;
+
+}
+#site::before{
+    content: "F";
+    font-size: 50px;
+    font-style: italic;
+    color: gold;
+}
+.yellow{
+    height: 350px;
+    width: 450px;
+    position: relative;
+    top: 9%;
+    right: 28.5%;
+    background-color: gold;
+}
+#info{
+    position: relative;
+    top: 35px;
+    right: 10px;
+    font-size: 30px;
+    color: lightslategray;
+}
+#mail{
+    position: relative;
+    top: 60px;
+    color: lightslategray;
+    font-size: 17px;
+}
+#phone{
+    position: relative;
+    top: 95px;
+    left: 60px;
+    color: lightslategray;
+}
+#location{
+    position: relative;
+    top: 130px;
+    left: 60px;
+    color: lightslategray; 
+}
+#time{
+    position: relative;
+    top: 175px;
+    left: 60px;
+    color: lightslategray; 
+}

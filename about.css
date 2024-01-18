@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fahkwang:wght@300&family=Michroma&family=Rubik&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+body{
+    background-color: #485461;
+    background-image: url("oneplus\ 3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    backdrop-filter:blur(20px) ; 
+
+}
+.darkmode{
+    background-color: #485461;
+    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.lightmode{
+    background-color: rgb(20, 18, 18);
+}
+
+/* Navbar styling */
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 110px;
+    width: 100%; 
+    flex-wrap: wrap;
+    /* background-image: url("oneplus\ 3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(10px); */
+    
+}
+
+.nav_bar-logo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    
+}
+.nav_bar-logo #image1{
+    height: 100px;
+    width: 50px;
+    transform: scale(1.2);
+    animation: zoom-out;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes zoom-out {
+    80%{
+        transform: scale(1.7);
+        filter: drop-shadow(0 0 3px rgba(198, 198, 15, 0.881));
+    }
+}
+
+.nav_bar-logo #logo1{
+    color: whitesmoke;
+    margin: 8px;
+    font-size: 30px;
+    text-shadow:1px 1px 1px rgb(218, 218, 12) ;
+}
+.nav_bar-logo #logo1::before{
+    color: rgb(198, 198, 7);
+    content: "F";
+    padding: 3px;
+    font-weight:900;
+    font-style: italic;
+    font-size: 50px;
+    text-shadow: 1px 3px 2px rgb(218, 218, 14);
+
+}
+.nav_bar-logo #logo2{
+    color: whitesmoke;
+    font-size: 30px;
+    font-weight: 400;
+}
+.nav_bar-logo #logo2::before{
+    content: "M";
+    font-size: 50px;
+    padding: 3px;
+    font-weight:900;
+
+}
+
+.nav_bar-content{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+.nav_bar-content ul li{
+    display: inline-block;
+    margin: 15px;
+    
+}
+.nav_bar-content ul li .text{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    color: rgb(218, 218, 12);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 4px;
+}
+.nav_bar-content ul li .text:hover{
+    background-color:rgb(218, 218, 12);
+    color: black;
+    border-radius: 1px;
+    transition: 0.9s;
+    transform: scale(1.5);
+    text-shadow: 1px 1px 2px rgb(207, 207, 14),
+    1px 2px 2px #111212,
+    1px 2px 2px #0e0f0f,
+    1px 2px 2px #0e0f0f;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0000);
+    box-shadow: 1px 2px 3px rgb(218, 218, 12),2px 4px 3px rgb(218, 218, 12), 3px 4px 4px rgb(218, 218, 12);
+
+}
+.nav_bar-content ul li .text-1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    color: rgb(218, 218, 12);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 4px;
+    text-transform: uppercase;
+}
+.nav_bar-content ul li .text-1:hover{
+    background-color:rgb(218, 218, 12);
+    color: black;
+    border-radius: 1px;
+    transition: 0.9s;
+    transform: scale(1.5);
+    text-shadow: 1px 1px 2px rgb(207, 207, 14),
+    1px 2px 2px #111212,
+    1px 2px 2px #0e0f0f,
+    1px 2px 2px #0e0f0f;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0000);
+    box-shadow: 1px 2px 3px rgb(218, 218, 12),2px 4px 3px rgb(218, 218, 12), 3px 4px 4px rgb(218, 218, 12);
+}
+.nav_bar-content ul li #search-bar{
+    height:30px;
+    width: 300px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid rgb(218, 218, 12);
+    background-color:#171717 ;
+}
+.nav_bar-content ul li #search-bar:focus{
+    color: rgb(218, 218, 12);
+    border: 1px solid rgb(218, 218, 12);
+}
+.nav_bar-content ul li #search-bar:hover{
+    box-shadow: 2px 2px 3px rgb(218, 218, 12),-2px 2px 3px rgb(218, 218, 12),-2px -2px 3px rgb(218, 218, 12)
+}
+.nav_bar-content ul li .sign-up{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    color: rgb(218, 218, 12);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 4px;
+    background-color:rgb(218, 218, 12);
+    color: black;
+    border-radius: 1px;
+    transition: 0.9s;
+    transform: scale(1.5);
+    text-shadow: 1px 1px 2px rgb(207, 207, 14),
+    1px 2px 2px #111212,
+    1px 2px 2px #0e0f0f,
+    1px 2px 2px #0e0f0f;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0000);
+    box-shadow: 1px 2px 0px rgb(218, 218, 12),2px 4px 0px rgb(218, 218, 12), 3px 4px 4px rgb(218, 218, 12); 
+}
+.nav_bar-content ul li .sign-up:hover{
+    background-color:black;
+    color: rgb(218, 218, 14);
+    text-shadow: 1px 1px 2px rgb(207, 207, 14),
+    1px 2px 2px #111212,
+    1px 2px 2px #0e0f0f,
+    1px 2px 2px #0e0f0f;
+    border: 1px solid rgb(207, 207, 14);
+}
+/* .nav_bar-content ul li #button{
+    height: 30px;
+    width: 50px;
+    background-color:rgb(218, 218, 12);
+    color: black;
+    text-shadow: 1px 1px 2px rgb(207, 207, 14),
+    1px 2px 2px #111212;
+    border-radius: 5px;
+}
+.nav_bar-content ul li #button:hover{
+    background-color: #171717;
+    color: rgb(218, 218, 12);
+} */
+.nav_bar-content ul li #button{
+    /* height: 30px;
+    width: 20px; */
+    background-color:rgb(218, 218, 12);
+    color: black;
+    text-shadow: 1px 1px 2px rgb(207, 207, 14),
+    1px 2px 2px #111212;
+    border-radius: 50%;
+}
+.nav_bar-content ul li #button:hover{
+    background-color: #171717;
+    color: rgb(218, 218, 12);
+}
+
+.about{
+    margin: 30px;
+    height: 85vh;
+    width: 96%;
+    background-color: white;
+}
+#about{
+    position: relative;
+    top: 30px;
+    left: 44%;
+    font-size: 45px;
+    color: gold;
+    text-shadow: 2px 2px 2px lightslategray;
+    
+}
+
+#do{
+    position: relative;
+    top: 40px;
+    left: 70px;
+    font-size: 30px;
+    color: lightslategray;
+}
+#sell{
+    position: relative;
+    top: 50px;
+    left: 70px;
+    padding-right: 30px;
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 30px;
+    color: #485461;
+}
+.service{
+    height: 270px;
+    width: 300px;
+    background-color: lightslategray;
+    float: left;
+    position: relative;
+    top: 90px;
+    left: 3%;
+    margin-right: 60px;
+    filter: drop-shadow(0 4px 4px);
+}
+.product{
+    height: 270px;
+    width: 300px;
+    background-color: lightslategray;
+    float: left;
+    position: relative;
+    top: 90px;
+    left: 3%;
+    margin-right: 60px;
+    filter: drop-shadow(0 4px 4px);
+}
+.quality{
+    height: 270px;
+    width: 300px;
+    background-color: lightslategray;
+    float: left;
+    position: relative;
+    top: 90px;
+    left: 3%;
+    margin-right: 60px;
+    filter: drop-shadow(0 4px 4px);
+}
+.contact{
+    height: 270px;
+    width: 300px;
+    background-color: lightslategray;
+    float: left;
+    position: relative;
+    top: 90px;
+    left: 3%;
+    margin-right: 60px;
+    filter: drop-shadow(0 4px 4px);
+}
+.service:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.product:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.contact:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.quality:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.service-heading{
+    position: relative;
+    top: 20px;
+    left: 33%;
+    color: gold;
+    font-size: 25px;
+}
+.product-heading{
+    position: relative;
+    top: 20px;
+    left: 33%;
+    color: gold;
+    font-size: 25px;
+}
+.quality-heading{
+    position: relative;
+    top: 20px;
+    left: 35%;
+    color: gold;
+    font-size: 25px;
+}
+.contact-heading{
+    position: relative;
+    top: 20px;
+    left: 35%;
+    color: gold;
+    font-size: 25px;
+}
+.service-para{
+    position: relative;
+    top: 15px;
+    margin: 25px;
+    padding-left: 10px;
+    font-size: 20px;
+    color: whitesmoke;
+}
+.product-para{
+    position: relative;
+    top: 15px;
+    margin: 25px;
+    padding-left: 10px;
+    font-size: 20px;
+    color: whitesmoke;
+}
+.quality-para{
+        position: relative;
+        top: 15px;
+        margin: 25px;
+        padding-left: 10px;
+        font-size: 20px;
+        color: whitesmoke;
+}
+.contact-para{
+    position: relative;
+    top: 15px;
+    margin: 25px;
+    padding-left: 10px;
+    font-size: 20px;
+    color: whitesmoke;
+}
+#know{
+    position: relative;
+    top: 30px;
+    left: 33%;
+    height: 30px;
+    width: 100px;
+    background-color: gold;
+    border: none;
+    color: lightslategray;
+}
+button:hover{
+    transform: scale(1.2);
+    transition: 1s;
+    color: white;
+}
